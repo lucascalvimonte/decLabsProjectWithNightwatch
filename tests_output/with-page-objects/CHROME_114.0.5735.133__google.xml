@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="with-page-objects.google"
+    errors="1" failures="1" hostname="" id="" package="with-page-objects" skipped="0"
+    tests="1" time="13.78" timestamp="">
+  
+    <testcase name="should find nightwatch.js in results" classname="with-page-objects.google" time="6.262" assertions="1">  <failure message="Timed out while waiting for element &lt;input[value=&#34;Google Search&#34;]&gt; to be present for 1000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (1042ms)">    at Page.submit (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/nightwatch/page-objects/google/search.js:17:10)
+    at DescribeInstance.&lt;anonymous&gt; (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/nightwatch/examples/with-page-objects/google.js:20:14)</failure>
+
+    
+    <error message="Timed out while waiting for element &lt;input[value=&#34;Google Search&#34;]&gt; to be present for 1000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not found&#34;[0m [0;90m(1042ms)[0m" type="error"><![CDATA[
+    Error
+    at Command.executeCommand (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/node_modules/nightwatch/lib/page-object/command-wrapper.js:262:22)
+    at Page.waitForElementVisible (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/node_modules/nightwatch/lib/page-object/command-wrapper.js:86:27)
+    at Page.submit (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/nightwatch/page-objects/google/search.js:17:10)
+    at DescribeInstance.&lt;anonymous&gt; (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/nightwatch/examples/with-page-objects/google.js:20:14)
+    at Context.call (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/node_modules/nightwatch/lib/testsuite/context.js:505:35)
+    at TestCase.run (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
+    at Runnable.__runFn (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/node_modules/nightwatch/lib/testsuite/index.js:799:80)
+    at Runnable.run (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
+    at TestSuite.executeRunnable (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/node_modules/nightwatch/lib/testsuite/index.js:953:49)
+    at TestSuite.handleRunnable (/Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/node_modules/nightwatch/lib/testsuite/index.js:968:33)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /Users/lucascalvimonte/Desktop/Lucas/Personal/Automation/Nightwatch/DecLabsNightwatch/nightwatch/examples/with-page-objects/google.js:
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     17 | 
+     18 |   it(&#39;should find nightwatch.js in results&#39;, function(browser) {
+     19 |     homePage.setValue(&#39;@searchBar&#39;, &#39;Nightwatch.js&#39;); 
+     20 |     homePage.submit();
+     21 | 
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

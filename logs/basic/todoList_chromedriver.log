@@ -1,0 +1,4064 @@
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 9515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1687484421.634][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+         }
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1687484421.635][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1687484421.635][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1687484421.635][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging=stderr --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/jz/r_dthm6d5gsgm423y4gnv87r0000gp/T/.com.google.Chrome.vWnYc0 data:,
+[11854:259:0622/224021.676734:WARNING:chrome_main_delegate.cc(593)] This is Chrome version 114.0.5735.133 (not a warning)
+[11854:259:0622/224022.006560:INFO:chrome_browser_cloud_management_controller.cc(167)] Starting CBCM Controller Initialization
+[11854:259:0622/224022.006583:INFO:chrome_browser_cloud_management_controller.cc(195)] No machine level policy manager exists.
+
+DevTools listening on ws://127.0.0.1:57043/devtools/browser/4dc4f2ac-e055-4e9b-a866-5231ec1602a7
+[1687484422.079][DEBUG]: DevTools HTTP Request: http://localhost:57043/json/version
+[1687484422.596][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/114.0.5735.133",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+   "V8-Version": "11.4.183.23",
+   "WebKit-Version": "537.36 (@fbfa2ce68d01b2201d8c667c2e73f648a61c4f4a)",
+   "webSocketDebuggerUrl": "ws://localhost:57043/devtools/browser/4dc4f2ac-e055-4e9b-a866-5231ec1602a7"
+}
+
+[1687484422.596][DEBUG]: DevTools HTTP Request: http://localhost:57043/json/list
+[1687484422.599][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:57043/devtools/page/26BECA3578038478D133C2A0E17AA388",
+   "id": "26BECA3578038478D133C2A0E17AA388",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:57043/devtools/page/26BECA3578038478D133C2A0E17AA388"
+} ]
+
+[1687484422.601][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1687484422.602][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1687484422.604][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "5477209607B31C52BA8DE2A4A6B16217",
+      "canAccessOpener": false,
+      "targetId": "26BECA3578038478D133C2A0E17AA388",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1687484422.604][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "26BECA3578038478D133C2A0E17AA388"
+}
+[1687484422.605][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "0A56FA3DA83EC239A4C5C6CE076B14CA",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "5477209607B31C52BA8DE2A4A6B16217",
+      "canAccessOpener": false,
+      "targetId": "26BECA3578038478D133C2A0E17AA388",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1687484422.605][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "0A56FA3DA83EC239A4C5C6CE076B14CA"
+}
+[1687484422.605][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=3) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1687484422.605][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=4) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1687484422.605][DEBUG]: DevTools WebSocket Command: Log.enable (id=5) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.605][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=6) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1687484422.605][DEBUG]: DevTools WebSocket Command: Page.enable (id=7) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.605][DEBUG]: DevTools WebSocket Command: Page.enable (id=8) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.612][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=3) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "identifier": "1"
+}
+[1687484422.612][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=4) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1687484422.612][DEBUG]: DevTools WebSocket Response: Log.enable (id=5) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.612][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=6) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.612][DEBUG]: DevTools WebSocket Response: Page.enable (id=7) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.612][DEBUG]: DevTools WebSocket Response: Page.enable (id=8) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.612][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.613][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "timestamp": 21488.230351
+}
+[1687484422.614][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameId": "26BECA3578038478D133C2A0E17AA388"
+}
+[1687484422.614][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "timestamp": 21488.230504
+}
+[1687484422.614][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "context": {
+      "auxData": {
+         "frameId": "26BECA3578038478D133C2A0E17AA388",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "-6271057951790540243.-7989342217137580865"
+   }
+}
+[1687484422.614][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.614][DEBUG]: DevTools WebSocket Command: Page.enable (id=10) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.614][DEBUG]: DevTools WebSocket Response: Page.enable (id=10) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.614][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=11) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.614][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=11) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.614][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=12) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.614][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=12) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "E06EAF25E3563E8E53ECF8C6FD8F6450",
+         "mimeType": "text/plain",
+         "secureContextType": "InsecureScheme",
+         "securityOrigin": "://",
+         "url": "data:,"
+      }
+   }
+}
+[1687484422.614][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=13) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.615][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=13) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "E06EAF25E3563E8E53ECF8C6FD8F6450",
+         "mimeType": "text/plain",
+         "secureContextType": "InsecureScheme",
+         "securityOrigin": "://",
+         "url": "data:,"
+      }
+   }
+}
+[1687484422.615][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=14) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "7dafaa56-a8a8-46b1-b17c-ed8622d4bbda",
+   "uniqueContextId": "-6271057951790540243.-7989342217137580865"
+}
+[1687484422.616][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=14) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-3790940366334878890.1.1",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":1}"
+         } ]
+      }
+   }
+}
+[1687484422.616][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=15) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "7dafaa56-a8a8-46b1-b17c-ed8622d4bbda"
+}
+[1687484422.616][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "114.0.5735.133",
+      "chrome": {
+         "chromedriverVersion": "114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052})",
+         "userDataDir": "/var/folders/jz/r_dthm6d5gsgm423y4gnv87r0000gp/T/.com.google.Chrome.vWnYc0"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:57043"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac os x",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "1e7055ed58dabc034772154dd7846587"
+}
+[1687484422.616][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=15) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.629][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND Navigate {
+   "url": "https://todo-vue3-vite.netlify.app/"
+}
+[1687484422.629][INFO]: Waiting for pending navigations...
+[1687484422.629][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484422.630][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484422.630][INFO]: Done waiting for pending navigations. Status: ok
+[1687484422.630][DEBUG]: DevTools WebSocket Command: Page.navigate (id=17) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "url": "https://todo-vue3-vite.netlify.app/"
+}
+[1687484422.950][DEBUG]: DevTools WebSocket Response: Page.navigate (id=17) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameId": "26BECA3578038478D133C2A0E17AA388",
+   "loaderId": "83BE69DB6304052E6A5917852D8F8628"
+}
+[1687484422.950][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "document.URL"
+}
+[1687484422.952][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.953][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameId": "26BECA3578038478D133C2A0E17AA388"
+}
+[1687484422.964][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484422.964][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "todo-vue3-vite.netlify.app",
+      "gatedAPIFeatures": [  ],
+      "id": "26BECA3578038478D133C2A0E17AA388",
+      "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://todo-vue3-vite.netlify.app",
+      "url": "https://todo-vue3-vite.netlify.app/"
+   },
+   "type": "Navigation"
+}
+[1687484422.964][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "context": {
+      "auxData": {
+         "frameId": "26BECA3578038478D133C2A0E17AA388",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://todo-vue3-vite.netlify.app",
+      "uniqueId": "-5326166179192838313.4923352784433099897"
+   }
+}
+[1687484422.965][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "type": "string",
+      "value": "https://todo-vue3-vite.netlify.app/"
+   }
+}
+[1687484422.965][INFO]: Waiting for pending navigations...
+[1687484422.965][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484422.966][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.353][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "timestamp": 21488.969669
+}
+[1687484423.353][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.357][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "timestamp": 21488.974079
+}
+[1687484423.357][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.357][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameId": "26BECA3578038478D133C2A0E17AA388"
+}
+[1687484423.357][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.357][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1687484423.357][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.357][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE Navigate
+[1687484423.362][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND FindElements {
+   "using": "css selector",
+   "value": "#new-todo-input"
+}
+[1687484423.362][INFO]: Waiting for pending navigations...
+[1687484423.362][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.362][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.362][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.363][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=23) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.364][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=23) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.364][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=24) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.364][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=24) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.365][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=25) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "768cf307-d59e-4cbb-8d3e-5a3216432c20",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.370][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=25) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(2)",
+      "objectId": "-5294046750678403915.1.1",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "autocomplete": "off",
+                  "class": "input__lg",
+                  "id": "new-todo-input",
+                  "name": "new-todo",
+                  "type": "text"
+               },
+               "backendNodeId": 2,
+               "childNodeCount": 0,
+               "localName": "input",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         } ]
+      }
+   }
+}
+[1687484423.370][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=26) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "768cf307-d59e-4cbb-8d3e-5a3216432c20"
+}
+[1687484423.370][INFO]: Waiting for pending navigations...
+[1687484423.370][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.371][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=26) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.371][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.371][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.371][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_2"
+} ]
+[1687484423.374][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND TypeElement {
+   "id": "83BE69DB6304052E6A5917852D8F8628_element_2",
+   "text": "what is nightwatch?",
+   "value": [ "w", "h", "a", "t", " ", "i", "s", " ", "n", "i", "g", "h", "t", "w", "a", "t", "c", "h", "?" ]
+}
+[1687484423.374][INFO]: Waiting for pending navigations...
+[1687484423.374][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=28) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.374][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=28) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.374][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.374][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=29) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.375][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=29) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.375][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=30) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 2,
+   "objectGroup": "9dbfe9f3-5c75-4c91-8bec-fefb6ff7840a"
+}
+[1687484423.375][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=30) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#new-todo-input.input__lg",
+      "objectId": "-5294046750678403915.1.2",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.375][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=31) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.375][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=31) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.376][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=32) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.2"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "9dbfe9f3-5c75-4c91-8bec-fefb6ff7840a",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.382][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=32) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.3",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"INPUT\"}"
+         } ]
+      }
+   }
+}
+[1687484423.382][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=33) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "9dbfe9f3-5c75-4c91-8bec-fefb6ff7840a"
+}
+[1687484423.382][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=34) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.382][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=33) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.382][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=34) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.382][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=35) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 2,
+   "objectGroup": "4645192a-9bdb-4928-b2eb-6cc8739cc394"
+}
+[1687484423.382][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=35) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#new-todo-input.input__lg",
+      "objectId": "-5294046750678403915.1.4",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.382][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=36) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.382][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=36) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.383][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=37) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.4"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "4645192a-9bdb-4928-b2eb-6cc8739cc394",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.386][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=37) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.5",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"text\"}"
+         } ]
+      }
+   }
+}
+[1687484423.386][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=38) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "4645192a-9bdb-4928-b2eb-6cc8739cc394"
+}
+[1687484423.386][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=39) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.386][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=38) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.386][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=39) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.386][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=40) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 2,
+   "objectGroup": "fab62a68-cb0e-4e8d-b7cb-240044f29a9c"
+}
+[1687484423.386][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=40) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#new-todo-input.input__lg",
+      "objectId": "-5294046750678403915.1.6",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.386][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=41) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.387][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=41) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.387][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=42) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.6"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "fab62a68-cb0e-4e8d-b7cb-240044f29a9c",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.387][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=42) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.7",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":false}"
+         } ]
+      }
+   }
+}
+[1687484423.387][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=43) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "fab62a68-cb0e-4e8d-b7cb-240044f29a9c"
+}
+[1687484423.387][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=44) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.388][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=43) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.388][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=44) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.388][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=45) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 2,
+   "objectGroup": "a27a4a2a-c5d6-4e3d-a316-3fcee028b2aa"
+}
+[1687484423.388][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=45) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#new-todo-input.input__lg",
+      "objectId": "-5294046750678403915.1.8",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.388][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=46) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.388][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=46) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.389][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=47) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.8"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "a27a4a2a-c5d6-4e3d-a316-3fcee028b2aa",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.390][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=47) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.9",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"INPUT\"}"
+         } ]
+      }
+   }
+}
+[1687484423.390][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=48) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "a27a4a2a-c5d6-4e3d-a316-3fcee028b2aa"
+}
+[1687484423.390][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=49) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "awaitPromise": false,
+   "expression": "document.hasFocus()",
+   "returnByValue": true
+}
+[1687484423.390][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=48) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.390][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=49) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "type": "boolean",
+      "value": true
+   }
+}
+[1687484423.390][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=50) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.390][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=50) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.390][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=51) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.390][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=51) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.390][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=52) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "192af467-bed9-424c-b750-ed8dbd56c7e0",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.391][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=52) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(2)",
+      "objectId": "-5294046750678403915.1.10",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"element-6066-11e4-a52e-4f735466cecf\":0}}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 3,
+               "childNodeCount": 3,
+               "localName": "body",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         } ]
+      }
+   }
+}
+[1687484423.391][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=53) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "192af467-bed9-424c-b750-ed8dbd56c7e0"
+}
+[1687484423.392][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=54) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.392][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=53) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.392][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=54) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.392][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=55) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 2,
+   "objectGroup": "9998c673-8961-4c62-81a9-85fca5218d78"
+}
+[1687484423.392][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=55) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#new-todo-input.input__lg",
+      "objectId": "-5294046750678403915.1.11",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.392][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=56) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.392][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=56) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.393][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=57) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.11"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "9998c673-8961-4c62-81a9-85fca5218d78",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.396][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=57) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.12",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":true}"
+         } ]
+      }
+   }
+}
+[1687484423.396][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=58) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "9998c673-8961-4c62-81a9-85fca5218d78"
+}
+[1687484423.396][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=59) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.396][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=58) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.396][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=59) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.396][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=60) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 2,
+   "objectGroup": "761f9876-d3be-4cea-89dd-df4a6f91e43d"
+}
+[1687484423.397][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=60) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#new-todo-input.input__lg",
+      "objectId": "-5294046750678403915.1.13",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.397][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=61) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.397][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=61) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.397][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=62) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.13"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "761f9876-d3be-4cea-89dd-df4a6f91e43d",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.399][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=62) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.14",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":true}"
+         } ]
+      }
+   }
+}
+[1687484423.399][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=63) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "761f9876-d3be-4cea-89dd-df4a6f91e43d"
+}
+[1687484423.399][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=64) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.399][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=63) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.399][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=64) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.399][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=65) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 2,
+   "objectGroup": "2c124c56-62cb-4e68-9258-75d9e48fc638"
+}
+[1687484423.399][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=65) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#new-todo-input.input__lg",
+      "objectId": "-5294046750678403915.1.15",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.399][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=66) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.400][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=66) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.400][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=67) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.15"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "2c124c56-62cb-4e68-9258-75d9e48fc638",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.401][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=67) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.16",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":null}"
+         } ]
+      }
+   }
+}
+[1687484423.401][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=68) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "2c124c56-62cb-4e68-9258-75d9e48fc638"
+}
+[1687484423.401][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=69) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.401][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=68) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.401][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=69) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.401][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=70) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 2,
+   "objectGroup": "e6472e71-8f9e-4906-8a9e-2de9a586e39d"
+}
+[1687484423.401][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=70) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#new-todo-input.input__lg",
+      "objectId": "-5294046750678403915.1.17",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.401][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=71) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.401][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=71) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.401][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=72) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.17"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "e6472e71-8f9e-4906-8a9e-2de9a586e39d",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.402][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=72) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.18",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":null}"
+         } ]
+      }
+   }
+}
+[1687484423.402][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=73) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "e6472e71-8f9e-4906-8a9e-2de9a586e39d"
+}
+[1687484423.463][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=74) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyW",
+   "key": "w",
+   "modifiers": 0,
+   "text": "w",
+   "type": "rawKeyDown",
+   "unmodifiedText": "w",
+   "windowsVirtualKeyCode": 87
+}
+[1687484423.463][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=75) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyW",
+   "key": "w",
+   "modifiers": 0,
+   "text": "w",
+   "type": "char",
+   "unmodifiedText": "w",
+   "windowsVirtualKeyCode": 87
+}
+[1687484423.463][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=76) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyW",
+   "key": "w",
+   "modifiers": 0,
+   "text": "w",
+   "type": "keyUp",
+   "unmodifiedText": "w",
+   "windowsVirtualKeyCode": 87
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=77) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyH",
+   "key": "h",
+   "modifiers": 0,
+   "text": "h",
+   "type": "rawKeyDown",
+   "unmodifiedText": "h",
+   "windowsVirtualKeyCode": 72
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=78) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyH",
+   "key": "h",
+   "modifiers": 0,
+   "text": "h",
+   "type": "char",
+   "unmodifiedText": "h",
+   "windowsVirtualKeyCode": 72
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=79) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyH",
+   "key": "h",
+   "modifiers": 0,
+   "text": "h",
+   "type": "keyUp",
+   "unmodifiedText": "h",
+   "windowsVirtualKeyCode": 72
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=80) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyA",
+   "key": "a",
+   "modifiers": 0,
+   "text": "a",
+   "type": "rawKeyDown",
+   "unmodifiedText": "a",
+   "windowsVirtualKeyCode": 65
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=81) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyA",
+   "key": "a",
+   "modifiers": 0,
+   "text": "a",
+   "type": "char",
+   "unmodifiedText": "a",
+   "windowsVirtualKeyCode": 65
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=82) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyA",
+   "key": "a",
+   "modifiers": 0,
+   "text": "a",
+   "type": "keyUp",
+   "unmodifiedText": "a",
+   "windowsVirtualKeyCode": 65
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=83) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyT",
+   "key": "t",
+   "modifiers": 0,
+   "text": "t",
+   "type": "rawKeyDown",
+   "unmodifiedText": "t",
+   "windowsVirtualKeyCode": 84
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=84) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyT",
+   "key": "t",
+   "modifiers": 0,
+   "text": "t",
+   "type": "char",
+   "unmodifiedText": "t",
+   "windowsVirtualKeyCode": 84
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=85) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyT",
+   "key": "t",
+   "modifiers": 0,
+   "text": "t",
+   "type": "keyUp",
+   "unmodifiedText": "t",
+   "windowsVirtualKeyCode": 84
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=86) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "Space",
+   "key": " ",
+   "modifiers": 0,
+   "text": " ",
+   "type": "rawKeyDown",
+   "unmodifiedText": " ",
+   "windowsVirtualKeyCode": 32
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=87) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "Space",
+   "key": " ",
+   "modifiers": 0,
+   "text": " ",
+   "type": "char",
+   "unmodifiedText": " ",
+   "windowsVirtualKeyCode": 32
+}
+[1687484423.464][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=88) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "Space",
+   "key": " ",
+   "modifiers": 0,
+   "text": " ",
+   "type": "keyUp",
+   "unmodifiedText": " ",
+   "windowsVirtualKeyCode": 32
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=89) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyI",
+   "key": "i",
+   "modifiers": 0,
+   "text": "i",
+   "type": "rawKeyDown",
+   "unmodifiedText": "i",
+   "windowsVirtualKeyCode": 73
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=90) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyI",
+   "key": "i",
+   "modifiers": 0,
+   "text": "i",
+   "type": "char",
+   "unmodifiedText": "i",
+   "windowsVirtualKeyCode": 73
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=91) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyI",
+   "key": "i",
+   "modifiers": 0,
+   "text": "i",
+   "type": "keyUp",
+   "unmodifiedText": "i",
+   "windowsVirtualKeyCode": 73
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=92) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyS",
+   "key": "s",
+   "modifiers": 0,
+   "text": "s",
+   "type": "rawKeyDown",
+   "unmodifiedText": "s",
+   "windowsVirtualKeyCode": 83
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=93) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyS",
+   "key": "s",
+   "modifiers": 0,
+   "text": "s",
+   "type": "char",
+   "unmodifiedText": "s",
+   "windowsVirtualKeyCode": 83
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=94) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyS",
+   "key": "s",
+   "modifiers": 0,
+   "text": "s",
+   "type": "keyUp",
+   "unmodifiedText": "s",
+   "windowsVirtualKeyCode": 83
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=95) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "Space",
+   "key": " ",
+   "modifiers": 0,
+   "text": " ",
+   "type": "rawKeyDown",
+   "unmodifiedText": " ",
+   "windowsVirtualKeyCode": 32
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=96) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "Space",
+   "key": " ",
+   "modifiers": 0,
+   "text": " ",
+   "type": "char",
+   "unmodifiedText": " ",
+   "windowsVirtualKeyCode": 32
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=97) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "Space",
+   "key": " ",
+   "modifiers": 0,
+   "text": " ",
+   "type": "keyUp",
+   "unmodifiedText": " ",
+   "windowsVirtualKeyCode": 32
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=98) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyN",
+   "key": "n",
+   "modifiers": 0,
+   "text": "n",
+   "type": "rawKeyDown",
+   "unmodifiedText": "n",
+   "windowsVirtualKeyCode": 78
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=99) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyN",
+   "key": "n",
+   "modifiers": 0,
+   "text": "n",
+   "type": "char",
+   "unmodifiedText": "n",
+   "windowsVirtualKeyCode": 78
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=100) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyN",
+   "key": "n",
+   "modifiers": 0,
+   "text": "n",
+   "type": "keyUp",
+   "unmodifiedText": "n",
+   "windowsVirtualKeyCode": 78
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=101) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyI",
+   "key": "i",
+   "modifiers": 0,
+   "text": "i",
+   "type": "rawKeyDown",
+   "unmodifiedText": "i",
+   "windowsVirtualKeyCode": 73
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=102) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyI",
+   "key": "i",
+   "modifiers": 0,
+   "text": "i",
+   "type": "char",
+   "unmodifiedText": "i",
+   "windowsVirtualKeyCode": 73
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=103) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyI",
+   "key": "i",
+   "modifiers": 0,
+   "text": "i",
+   "type": "keyUp",
+   "unmodifiedText": "i",
+   "windowsVirtualKeyCode": 73
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=104) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyG",
+   "key": "g",
+   "modifiers": 0,
+   "text": "g",
+   "type": "rawKeyDown",
+   "unmodifiedText": "g",
+   "windowsVirtualKeyCode": 71
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=105) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyG",
+   "key": "g",
+   "modifiers": 0,
+   "text": "g",
+   "type": "char",
+   "unmodifiedText": "g",
+   "windowsVirtualKeyCode": 71
+}
+[1687484423.465][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=106) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyG",
+   "key": "g",
+   "modifiers": 0,
+   "text": "g",
+   "type": "keyUp",
+   "unmodifiedText": "g",
+   "windowsVirtualKeyCode": 71
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=107) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyH",
+   "key": "h",
+   "modifiers": 0,
+   "text": "h",
+   "type": "rawKeyDown",
+   "unmodifiedText": "h",
+   "windowsVirtualKeyCode": 72
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=108) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyH",
+   "key": "h",
+   "modifiers": 0,
+   "text": "h",
+   "type": "char",
+   "unmodifiedText": "h",
+   "windowsVirtualKeyCode": 72
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=109) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyH",
+   "key": "h",
+   "modifiers": 0,
+   "text": "h",
+   "type": "keyUp",
+   "unmodifiedText": "h",
+   "windowsVirtualKeyCode": 72
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=110) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyT",
+   "key": "t",
+   "modifiers": 0,
+   "text": "t",
+   "type": "rawKeyDown",
+   "unmodifiedText": "t",
+   "windowsVirtualKeyCode": 84
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=111) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyT",
+   "key": "t",
+   "modifiers": 0,
+   "text": "t",
+   "type": "char",
+   "unmodifiedText": "t",
+   "windowsVirtualKeyCode": 84
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=112) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyT",
+   "key": "t",
+   "modifiers": 0,
+   "text": "t",
+   "type": "keyUp",
+   "unmodifiedText": "t",
+   "windowsVirtualKeyCode": 84
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=113) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyW",
+   "key": "w",
+   "modifiers": 0,
+   "text": "w",
+   "type": "rawKeyDown",
+   "unmodifiedText": "w",
+   "windowsVirtualKeyCode": 87
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=114) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyW",
+   "key": "w",
+   "modifiers": 0,
+   "text": "w",
+   "type": "char",
+   "unmodifiedText": "w",
+   "windowsVirtualKeyCode": 87
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=115) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyW",
+   "key": "w",
+   "modifiers": 0,
+   "text": "w",
+   "type": "keyUp",
+   "unmodifiedText": "w",
+   "windowsVirtualKeyCode": 87
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=116) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyA",
+   "key": "a",
+   "modifiers": 0,
+   "text": "a",
+   "type": "rawKeyDown",
+   "unmodifiedText": "a",
+   "windowsVirtualKeyCode": 65
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=117) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyA",
+   "key": "a",
+   "modifiers": 0,
+   "text": "a",
+   "type": "char",
+   "unmodifiedText": "a",
+   "windowsVirtualKeyCode": 65
+}
+[1687484423.466][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=118) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyA",
+   "key": "a",
+   "modifiers": 0,
+   "text": "a",
+   "type": "keyUp",
+   "unmodifiedText": "a",
+   "windowsVirtualKeyCode": 65
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=119) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyT",
+   "key": "t",
+   "modifiers": 0,
+   "text": "t",
+   "type": "rawKeyDown",
+   "unmodifiedText": "t",
+   "windowsVirtualKeyCode": 84
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=120) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyT",
+   "key": "t",
+   "modifiers": 0,
+   "text": "t",
+   "type": "char",
+   "unmodifiedText": "t",
+   "windowsVirtualKeyCode": 84
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=121) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyT",
+   "key": "t",
+   "modifiers": 0,
+   "text": "t",
+   "type": "keyUp",
+   "unmodifiedText": "t",
+   "windowsVirtualKeyCode": 84
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=122) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyC",
+   "key": "c",
+   "modifiers": 0,
+   "text": "c",
+   "type": "rawKeyDown",
+   "unmodifiedText": "c",
+   "windowsVirtualKeyCode": 67
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=123) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyC",
+   "key": "c",
+   "modifiers": 0,
+   "text": "c",
+   "type": "char",
+   "unmodifiedText": "c",
+   "windowsVirtualKeyCode": 67
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=124) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyC",
+   "key": "c",
+   "modifiers": 0,
+   "text": "c",
+   "type": "keyUp",
+   "unmodifiedText": "c",
+   "windowsVirtualKeyCode": 67
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=125) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyH",
+   "key": "h",
+   "modifiers": 0,
+   "text": "h",
+   "type": "rawKeyDown",
+   "unmodifiedText": "h",
+   "windowsVirtualKeyCode": 72
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=126) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyH",
+   "key": "h",
+   "modifiers": 0,
+   "text": "h",
+   "type": "char",
+   "unmodifiedText": "h",
+   "windowsVirtualKeyCode": 72
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=127) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "KeyH",
+   "key": "h",
+   "modifiers": 0,
+   "text": "h",
+   "type": "keyUp",
+   "unmodifiedText": "h",
+   "windowsVirtualKeyCode": 72
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=128) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "ShiftLeft",
+   "key": "Shift",
+   "modifiers": 0,
+   "text": "",
+   "type": "rawKeyDown",
+   "unmodifiedText": "",
+   "windowsVirtualKeyCode": 16
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=129) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "Minus",
+   "key": "_",
+   "modifiers": 8,
+   "text": "?",
+   "type": "rawKeyDown",
+   "unmodifiedText": "'",
+   "windowsVirtualKeyCode": 189
+}
+[1687484423.467][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=130) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "Minus",
+   "key": "_",
+   "modifiers": 8,
+   "text": "?",
+   "type": "char",
+   "unmodifiedText": "'",
+   "windowsVirtualKeyCode": 189
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=131) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "Minus",
+   "key": "_",
+   "modifiers": 8,
+   "text": "?",
+   "type": "keyUp",
+   "unmodifiedText": "'",
+   "windowsVirtualKeyCode": 189
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=132) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "code": "ShiftLeft",
+   "key": "Shift",
+   "modifiers": 0,
+   "text": "",
+   "type": "keyUp",
+   "unmodifiedText": "",
+   "windowsVirtualKeyCode": 16
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=73) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=74) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=75) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=76) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=77) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=78) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=79) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=80) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=81) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=82) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=83) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=84) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=85) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=86) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=87) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=88) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=89) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=90) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=91) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=92) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=93) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=94) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=95) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=96) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=97) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=98) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=99) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=100) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=101) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=102) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=103) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=104) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=105) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=106) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=107) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=108) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=109) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=110) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=111) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=112) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=113) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=114) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=115) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=116) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=117) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=118) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=119) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=120) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=121) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=122) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=123) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=124) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=125) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=126) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=127) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=128) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=129) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=130) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=131) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=132) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.468][INFO]: Waiting for pending navigations...
+[1687484423.468][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=133) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.469][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=133) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.469][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.469][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE TypeElement
+[1687484423.471][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND FindElements {
+   "using": "css selector",
+   "value": "form button[type=\"submit\"]"
+}
+[1687484423.471][INFO]: Waiting for pending navigations...
+[1687484423.471][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=134) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.471][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=134) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.471][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.471][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=135) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.471][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=135) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.471][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=136) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.472][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=136) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.472][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=137) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "a5731c6d-df81-4a18-ac10-08cdf1ce6a74",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.476][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=137) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(2)",
+      "objectId": "-5294046750678403915.1.19",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "class": "btn btn__primary btn__lg",
+                  "type": "submit"
+               },
+               "backendNodeId": 6,
+               "childNodeCount": 1,
+               "localName": "button",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         } ]
+      }
+   }
+}
+[1687484423.476][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=138) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "a5731c6d-df81-4a18-ac10-08cdf1ce6a74"
+}
+[1687484423.476][INFO]: Waiting for pending navigations...
+[1687484423.476][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=139) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.476][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=138) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.476][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=139) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.476][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.476][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_6"
+} ]
+[1687484423.478][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND ClickElement {
+   "id": "83BE69DB6304052E6A5917852D8F8628_element_6"
+}
+[1687484423.478][INFO]: Waiting for pending navigations...
+[1687484423.478][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=140) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.478][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=140) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.478][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.478][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=141) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.478][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=141) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.478][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=142) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 6,
+   "objectGroup": "861935eb-37db-4ef3-938d-28cdba8041e4"
+}
+[1687484423.479][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=142) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.btn.btn__primary.btn__lg",
+      "objectId": "-5294046750678403915.1.20",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.479][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=143) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.479][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=143) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.479][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=144) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.20"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "861935eb-37db-4ef3-938d-28cdba8041e4",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.480][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=144) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.21",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"button\"}"
+         } ]
+      }
+   }
+}
+[1687484423.480][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=145) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "861935eb-37db-4ef3-938d-28cdba8041e4"
+}
+[1687484423.480][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=146) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.480][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=145) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.480][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=146) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.480][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=147) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 6,
+   "objectGroup": "00f13e51-babc-46ac-b271-dc8593d0f213"
+}
+[1687484423.480][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=147) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.btn.btn__primary.btn__lg",
+      "objectId": "-5294046750678403915.1.22",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.480][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=148) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.480][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=148) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.480][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=149) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.22"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "00f13e51-babc-46ac-b271-dc8593d0f213",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.481][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=149) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.23",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"button\"}"
+         } ]
+      }
+   }
+}
+[1687484423.481][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=150) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "00f13e51-babc-46ac-b271-dc8593d0f213"
+}
+[1687484423.481][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=151) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.481][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=150) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.481][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=151) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.481][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=152) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 6,
+   "objectGroup": "3227a88c-0c2d-4fbb-90a7-1d1d40c78749"
+}
+[1687484423.481][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=152) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.btn.btn__primary.btn__lg",
+      "objectId": "-5294046750678403915.1.24",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.481][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=153) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.481][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=153) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.482][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=154) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.24"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "3227a88c-0c2d-4fbb-90a7-1d1d40c78749",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.483][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=154) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.25",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":true}"
+         } ]
+      }
+   }
+}
+[1687484423.483][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=155) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "3227a88c-0c2d-4fbb-90a7-1d1d40c78749"
+}
+[1687484423.483][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=156) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.483][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=155) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.484][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=156) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.484][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=157) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 6,
+   "objectGroup": "38382640-7d95-4a33-acb0-127a906045d2"
+}
+[1687484423.484][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=157) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.btn.btn__primary.btn__lg",
+      "objectId": "-5294046750678403915.1.26",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.484][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=158) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.484][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=158) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.484][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=159) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.26"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "38382640-7d95-4a33-acb0-127a906045d2",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.485][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=159) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.27",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"left\":0,\"top\":0,\"height\":46.59375,\"width\":500}}"
+         } ]
+      }
+   }
+}
+[1687484423.485][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=160) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "38382640-7d95-4a33-acb0-127a906045d2"
+}
+[1687484423.485][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=161) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.485][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=160) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.486][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=161) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.486][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=162) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 6,
+   "objectGroup": "6d8ac5a0-0dc6-43ba-acba-3a740969f780"
+}
+[1687484423.486][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=162) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.btn.btn__primary.btn__lg",
+      "objectId": "-5294046750678403915.1.28",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.486][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=163) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.486][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=163) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.486][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=164) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.28"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "6d8ac5a0-0dc6-43ba-acba-3a740969f780",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.489][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=164) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.29",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"x\":342.5,\"y\":201.09375,\"clone\":{},\"ceil\":{},\"floor\":{},\"round\":{},\"translate\":{},\"scale\":{}}}"
+         } ]
+      }
+   }
+}
+[1687484423.489][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=165) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "6d8ac5a0-0dc6-43ba-acba-3a740969f780"
+}
+[1687484423.489][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=166) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.489][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=165) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.489][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=166) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.489][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=167) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 6,
+   "objectGroup": "c399c32f-a016-47ba-9143-537f678fcc11"
+}
+[1687484423.489][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=167) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.btn.btn__primary.btn__lg",
+      "objectId": "-5294046750678403915.1.30",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.489][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=168) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.489][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=168) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.490][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=169) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.30"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "c399c32f-a016-47ba-9143-537f678fcc11",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.492][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=169) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.31",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"clickable\":true}}"
+         } ]
+      }
+   }
+}
+[1687484423.492][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=170) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "c399c32f-a016-47ba-9143-537f678fcc11"
+}
+[1687484423.492][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=171) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "button": "none",
+   "buttons": 0,
+   "clickCount": 0,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mouseMoved",
+   "x": 592,
+   "y": 224
+}
+[1687484423.492][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=172) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "button": "left",
+   "buttons": 0,
+   "clickCount": 1,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mousePressed",
+   "x": 592,
+   "y": 224
+}
+[1687484423.492][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=173) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "button": "left",
+   "buttons": 1,
+   "clickCount": 1,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mouseReleased",
+   "x": 592,
+   "y": 224
+}
+[1687484423.492][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=170) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.492][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=171) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.493][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=172) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.495][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=173) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.495][INFO]: Waiting for pending navigations...
+[1687484423.495][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=174) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.495][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=174) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.495][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.495][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE ClickElement
+[1687484423.499][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND FindElements {
+   "using": "css selector",
+   "value": "#todo-list ul li"
+}
+[1687484423.499][INFO]: Waiting for pending navigations...
+[1687484423.499][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=175) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.499][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=175) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.499][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.499][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=176) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.499][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=176) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.499][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=177) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.500][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=177) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.500][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=178) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "5dfa9f6b-428c-483f-9ae3-8cff31741728",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.503][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=178) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(6)",
+      "objectId": "-5294046750678403915.1.32",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0},{\"element-6066-11e4-a52e-4f735466cecf\":1},{\"element-6066-11e4-a52e-4f735466cecf\":2},{\"element-6066-11e4-a52e-4f735466cecf\":3},{\"elemen..."
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 7,
+               "childNodeCount": 1,
+               "localName": "li",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 8,
+               "childNodeCount": 1,
+               "localName": "li",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 9,
+               "childNodeCount": 1,
+               "localName": "li",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 10,
+               "childNodeCount": 1,
+               "localName": "li",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 11,
+               "childNodeCount": 1,
+               "localName": "li",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         } ]
+      }
+   }
+}
+[1687484423.503][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=179) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "5dfa9f6b-428c-483f-9ae3-8cff31741728"
+}
+[1687484423.503][INFO]: Waiting for pending navigations...
+[1687484423.503][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=180) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.503][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=179) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.503][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=180) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.503][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.503][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_7"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_8"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_9"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_10"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_11"
+} ]
+[1687484423.506][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND FindElements {
+   "using": "css selector",
+   "value": "#todo-list ul li"
+}
+[1687484423.506][INFO]: Waiting for pending navigations...
+[1687484423.506][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=181) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.506][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=181) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.506][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.506][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=182) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.507][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=182) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.507][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=183) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.507][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=183) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.507][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=184) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "080c5f6a-f92d-469f-9ee4-a6e4686ea7fe",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.509][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=184) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(6)",
+      "objectId": "-5294046750678403915.1.33",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0},{\"element-6066-11e4-a52e-4f735466cecf\":1},{\"element-6066-11e4-a52e-4f735466cecf\":2},{\"element-6066-11e4-a52e-4f735466cecf\":3},{\"elemen..."
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 7,
+               "childNodeCount": 1,
+               "localName": "li",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 8,
+               "childNodeCount": 1,
+               "localName": "li",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 9,
+               "childNodeCount": 1,
+               "localName": "li",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 10,
+               "childNodeCount": 1,
+               "localName": "li",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+               },
+               "backendNodeId": 11,
+               "childNodeCount": 1,
+               "localName": "li",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         } ]
+      }
+   }
+}
+[1687484423.509][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=185) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "080c5f6a-f92d-469f-9ee4-a6e4686ea7fe"
+}
+[1687484423.509][INFO]: Waiting for pending navigations...
+[1687484423.509][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=186) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.510][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=185) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.510][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=186) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.510][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.510][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_7"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_8"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_9"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_10"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_11"
+} ]
+[1687484423.513][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND GetElementText {
+   "id": "83BE69DB6304052E6A5917852D8F8628_element_11"
+}
+[1687484423.513][INFO]: Waiting for pending navigations...
+[1687484423.513][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=187) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.513][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=187) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.513][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.513][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=188) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.514][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=188) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.514][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=189) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 11,
+   "objectGroup": "b9ba5b56-b8cd-40f7-8f7c-33e05ce34ec8"
+}
+[1687484423.514][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=189) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLLIElement",
+      "description": "li",
+      "objectId": "-5294046750678403915.1.34",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.514][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=190) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.514][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=190) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.515][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=191) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.34"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "b9ba5b56-b8cd-40f7-8f7c-33e05ce34ec8",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.521][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=191) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.35",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"new taskwhat is nightwatch?\\nEdit\\nNew Taskwhat Is Nightwatch?\\nDelete\\nNew Taskwhat Is Nightwatch?\"}"
+         } ]
+      }
+   }
+}
+[1687484423.521][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=192) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "b9ba5b56-b8cd-40f7-8f7c-33e05ce34ec8"
+}
+[1687484423.521][INFO]: Waiting for pending navigations...
+[1687484423.521][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=193) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.522][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=192) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.522][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=193) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.522][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.522][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE GetElementText "new taskwhat is nightwatch?\nEdit\nNew Taskwhat Is Nightwatch?\nDelete\nNew Taskwhat Is Nightwatch?"
+[1687484423.525][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND FindChildElement {
+   "id": "83BE69DB6304052E6A5917852D8F8628_element_11",
+   "using": "css selector",
+   "value": "input[type=\"checkbox\"]"
+}
+[1687484423.525][INFO]: Waiting for pending navigations...
+[1687484423.525][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=194) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.525][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=194) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.525][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.525][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=195) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.526][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=195) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.526][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=196) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 11,
+   "objectGroup": "7784a8d5-038d-4155-8ca1-f98d9d284cc7"
+}
+[1687484423.526][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=196) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLLIElement",
+      "description": "li",
+      "objectId": "-5294046750678403915.1.36",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.526][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=197) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.526][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=197) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.527][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=198) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.36"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "7784a8d5-038d-4155-8ca1-f98d9d284cc7",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.530][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=198) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(2)",
+      "objectId": "-5294046750678403915.1.37",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"element-6066-11e4-a52e-4f735466cecf\":0}}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "class": "checkbox",
+                  "data-v-ef6f246e": "",
+                  "id": "todo-5",
+                  "type": "checkbox"
+               },
+               "backendNodeId": 12,
+               "childNodeCount": 0,
+               "localName": "input",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         } ]
+      }
+   }
+}
+[1687484423.530][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=199) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "7784a8d5-038d-4155-8ca1-f98d9d284cc7"
+}
+[1687484423.530][INFO]: Waiting for pending navigations...
+[1687484423.530][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=200) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.530][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=199) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.530][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=200) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.530][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.530][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE FindChildElement {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_12"
+}
+[1687484423.532][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND ClickElement {
+   "id": "83BE69DB6304052E6A5917852D8F8628_element_12"
+}
+[1687484423.532][INFO]: Waiting for pending navigations...
+[1687484423.532][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=201) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.532][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=201) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.532][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.532][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=202) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.532][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=202) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.533][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=203) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 12,
+   "objectGroup": "ee7c41cf-02bf-4cd5-9030-f2a1e5da6fd3"
+}
+[1687484423.533][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=203) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#todo-5.checkbox",
+      "objectId": "-5294046750678403915.1.38",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.533][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=204) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.533][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=204) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.533][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=205) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.38"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "ee7c41cf-02bf-4cd5-9030-f2a1e5da6fd3",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.534][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=205) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.39",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"input\"}"
+         } ]
+      }
+   }
+}
+[1687484423.534][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=206) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "ee7c41cf-02bf-4cd5-9030-f2a1e5da6fd3"
+}
+[1687484423.534][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=207) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.534][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=206) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.534][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=207) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.534][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=208) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 12,
+   "objectGroup": "621e5ab9-49fb-415a-a791-4fb34c7ba895"
+}
+[1687484423.534][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=208) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#todo-5.checkbox",
+      "objectId": "-5294046750678403915.1.40",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.534][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=209) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.535][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=209) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.535][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=210) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.40"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "621e5ab9-49fb-415a-a791-4fb34c7ba895",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.537][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=210) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.41",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"checkbox\"}"
+         } ]
+      }
+   }
+}
+[1687484423.538][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=211) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "621e5ab9-49fb-415a-a791-4fb34c7ba895"
+}
+[1687484423.538][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=212) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.538][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=211) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.538][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=212) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.538][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=213) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 12,
+   "objectGroup": "496d2377-4afb-47cb-926e-caa09f1f4113"
+}
+[1687484423.538][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=213) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#todo-5.checkbox",
+      "objectId": "-5294046750678403915.1.42",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.538][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=214) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.539][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=214) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.539][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=215) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.42"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "496d2377-4afb-47cb-926e-caa09f1f4113",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.540][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=215) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.43",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"input\"}"
+         } ]
+      }
+   }
+}
+[1687484423.540][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=216) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "496d2377-4afb-47cb-926e-caa09f1f4113"
+}
+[1687484423.540][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=217) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.540][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=216) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.540][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=217) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.540][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=218) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 12,
+   "objectGroup": "bf5e23cc-2217-4321-a317-4ecaa699c904"
+}
+[1687484423.541][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=218) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#todo-5.checkbox",
+      "objectId": "-5294046750678403915.1.44",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.541][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=219) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.541][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=219) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.541][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=220) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.44"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "bf5e23cc-2217-4321-a317-4ecaa699c904",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.543][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=220) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.45",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":true}"
+         } ]
+      }
+   }
+}
+[1687484423.543][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=221) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "bf5e23cc-2217-4321-a317-4ecaa699c904"
+}
+[1687484423.543][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=222) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.543][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=221) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.543][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=222) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.543][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=223) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 12,
+   "objectGroup": "c3c6f5f8-03bb-4b83-8ef1-cee87a8575ff"
+}
+[1687484423.543][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=223) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#todo-5.checkbox",
+      "objectId": "-5294046750678403915.1.46",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.543][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=224) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.544][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=224) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.544][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=225) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.46"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "c3c6f5f8-03bb-4b83-8ef1-cee87a8575ff",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.544][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=225) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.47",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"left\":0,\"top\":0,\"height\":44,\"width\":44}}"
+         } ]
+      }
+   }
+}
+[1687484423.544][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=226) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "c3c6f5f8-03bb-4b83-8ef1-cee87a8575ff"
+}
+[1687484423.544][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=227) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.545][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=226) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.545][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=227) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.545][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=228) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 12,
+   "objectGroup": "e1ca5625-04fb-4377-a983-b2e79a62f61b"
+}
+[1687484423.545][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=228) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#todo-5.checkbox",
+      "objectId": "-5294046750678403915.1.48",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.545][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=229) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.545][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=229) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.546][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=230) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.48"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "e1ca5625-04fb-4377-a983-b2e79a62f61b",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.548][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=230) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.49",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"x\":340.5,\"y\":817.203125,\"clone\":{},\"ceil\":{},\"floor\":{},\"round\":{},\"translate\":{},\"scale\":{}}}"
+         } ]
+      }
+   }
+}
+[1687484423.548][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=231) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "e1ca5625-04fb-4377-a983-b2e79a62f61b"
+}
+[1687484423.548][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=232) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.548][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=231) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.548][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=232) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.548][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=233) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "backendNodeId": 12,
+   "objectGroup": "a5472ea7-a9c3-4805-b82e-82f5f7bb2ff6"
+}
+[1687484423.548][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=233) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#todo-5.checkbox",
+      "objectId": "-5294046750678403915.1.50",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687484423.548][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=234) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.549][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=234) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.549][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=235) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [ {
+      "objectId": "-5294046750678403915.1.50"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "a5472ea7-a9c3-4805-b82e-82f5f7bb2ff6",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.551][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=235) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-5294046750678403915.1.51",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"clickable\":true}}"
+         } ]
+      }
+   }
+}
+[1687484423.551][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=236) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "a5472ea7-a9c3-4805-b82e-82f5f7bb2ff6"
+}
+[1687484423.551][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=237) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "button": "none",
+   "buttons": 0,
+   "clickCount": 0,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mouseMoved",
+   "x": 362,
+   "y": 839
+}
+[1687484423.551][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=238) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "button": "left",
+   "buttons": 0,
+   "clickCount": 1,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mousePressed",
+   "x": 362,
+   "y": 839
+}
+[1687484423.551][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=239) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "button": "left",
+   "buttons": 1,
+   "clickCount": 1,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mouseReleased",
+   "x": 362,
+   "y": 839
+}
+[1687484423.551][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=236) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.551][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=237) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.552][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=238) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.552][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=239) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.552][INFO]: Waiting for pending navigations...
+[1687484423.552][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=240) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.553][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=240) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.553][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.553][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE ClickElement
+[1687484423.555][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND FindElements {
+   "using": "css selector",
+   "value": "#todo-list ul li input:checked"
+}
+[1687484423.555][INFO]: Waiting for pending navigations...
+[1687484423.555][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=241) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.555][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=241) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.555][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.555][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=242) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.555][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=242) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.555][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=243) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.556][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=243) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "todo-vue3-vite.netlify.app",
+         "gatedAPIFeatures": [  ],
+         "id": "26BECA3578038478D133C2A0E17AA388",
+         "loaderId": "83BE69DB6304052E6A5917852D8F8628",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://todo-vue3-vite.netlify.app",
+         "url": "https://todo-vue3-vite.netlify.app/"
+      }
+   }
+}
+[1687484423.556][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=244) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "dd7012e0-88f5-4a91-8381-ab3691833fe6",
+   "uniqueContextId": "-5326166179192838313.4923352784433099897"
+}
+[1687484423.559][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=244) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "className": "Array",
+      "description": "Array(4)",
+      "objectId": "-5294046750678403915.1.52",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0},{\"element-6066-11e4-a52e-4f735466cecf\":1},{\"element-6066-11e4-a52e-4f735466cecf\":2}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "class": "checkbox",
+                  "data-v-ef6f246e": "",
+                  "id": "todo-2",
+                  "type": "checkbox"
+               },
+               "backendNodeId": 13,
+               "childNodeCount": 0,
+               "localName": "input",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "class": "checkbox",
+                  "data-v-ef6f246e": "",
+                  "id": "todo-3",
+                  "type": "checkbox"
+               },
+               "backendNodeId": 14,
+               "childNodeCount": 0,
+               "localName": "input",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "class": "checkbox",
+                  "data-v-ef6f246e": "",
+                  "id": "todo-5",
+                  "type": "checkbox"
+               },
+               "backendNodeId": 12,
+               "childNodeCount": 0,
+               "localName": "input",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         } ]
+      }
+   }
+}
+[1687484423.560][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=245) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "objectGroup": "dd7012e0-88f5-4a91-8381-ab3691833fe6"
+}
+[1687484423.560][INFO]: Waiting for pending navigations...
+[1687484423.560][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=246) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "expression": "1"
+}
+[1687484423.560][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=245) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+}
+[1687484423.560][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=246) (session_id=0A56FA3DA83EC239A4C5C6CE076B14CA) 26BECA3578038478D133C2A0E17AA388 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687484423.560][INFO]: Done waiting for pending navigations. Status: ok
+[1687484423.560][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_13"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_14"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "83BE69DB6304052E6A5917852D8F8628_element_12"
+} ]
+[1687484423.567][INFO]: [1e7055ed58dabc034772154dd7846587] COMMAND Quit {
+}
+[1687484423.621][INFO]: [1e7055ed58dabc034772154dd7846587] RESPONSE Quit
+[1687484423.621][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1687484423.621][DEBUG]: Log type 'browser' lost 0 entries on destruction
